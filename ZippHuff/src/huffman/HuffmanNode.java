@@ -2,17 +2,16 @@ package huffman;
 
 public class HuffmanNode {
     int frequency;
+    byte data;
+
     char character;
     HuffmanNode left, right;
 
-    HuffmanNode(char character, int frequency){
-        this.character = character;
+    public HuffmanNode(byte data, int frequency) {
+        this.data = data;
         this.frequency = frequency;
-        this.left = this.right = null;
+        this.left = null;
+        this.right = null;
     }
 
-    HuffmanNode(int frequency){
-        this.frequency = frequency;
-        this.left = this.right = null;
-    }
 }
